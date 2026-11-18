@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+/* Completely hide all scrollbars everywhere across the entire website and in all embedded frames */
+* {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+*::-webkit-scrollbar,
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+div::-webkit-scrollbar,
+iframe::-webkit-scrollbar,
+section::-webkit-scrollbar {
+  display: none !important;
+  width: 0px !important;
+  height: 0px !important;
+  background: transparent !important;
+}
+
+html, body, #root {
+  overflow-x: hidden;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+/* Base resets */
+body {
+  background-color: #111214;
+  overflow-x: hidden;
+}
